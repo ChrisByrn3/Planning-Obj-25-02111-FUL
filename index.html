@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Planning Objection – Chester Road, Sandiway 25/02111/FUL</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; line-height: 1.6; }
+  
+  /* Unified styling for all input and textarea fields */
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+  }
+
+  button { 
+    background: #c62828; 
+    color: white; 
+    padding: 20px 30px;  /* Increased size */
+    font-size: 22px;     /* Increased font size */
+    border: none; 
+    cursor: pointer; 
+    width: 100%;         /* Optional: full width for emphasis */
+  }
+  button:hover { background: #a91414; }
+
+  .instructions { 
+    background: #fff4e5; 
+    border: 1px solid #f0ad4e; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+  }
+  .instructions strong { color: #a65b00; }
+</style>
+</head>
+<body>
+
+<h1>Formal Objection to Planning Application 25/02111/FUL</h1>
+
+<div class="instructions">
+  <strong>Important – Please Read Before Sending:</strong>
+  <ol>
+    <li>This form opens your email program with the objection letter already filled in. 
+
+You can add, edit, or remove anything in the email before sending.
+
+ The email will be sent from <em>your own email address</em> so the council counts it as an individual objection.</li>
+    <li>If you use Gmail, Outlook.com, Yahoo, or another webmail service, you need to set it as your <strong>default email handler</strong> first:
+      <ul>
+        <li><strong>Gmail in Chrome:</strong> Open Gmail, click the lock icon 🔒 or site info icon in the address bar, find “Site settings” → “Handlers” → allow mail.google.com to handle email links
+        <li><strong>Outlook.com in Edge/Chrome:</strong> Sign in to Outlook.com, then in browser settings enable it as your default mail handler.</li>
+      </ul>
+    </li>
+    <li>If nothing happens when you click “Send Objection”, it means no email handler is set up. Please copy the objection letter manually into your own email and send to: <br>
+    <code>planning@cheshirewestandchester.gov.uk, gillian.edwards@cheshirewestandchester.gov.uk, aphra.brandreth.mp@parliament.uk, phil.rimmer@cheshirewestandchester.gov.uk, clerk@cuddingtonparish.gov.uk
+  </ol>
+</div>
+
+<p>Please complete your details below and click "Send Objection".</p>
+
+<p>Your Full Name:</p>
+<input type="text" id="name" placeholder="Enter your full name">
+
+<p>Your Address:</p>
+<textarea id="address" placeholder="Enter your full postal address"></textarea>
+
+<p>Your Email Address:</p>
+<input type="email" id="email" placeholder="Enter your email address">
+
+<p>Today's Date</p>
+<input type="text" id="date" placeholder="Enter the date you are sending this email">
+
+<button onclick="sendEmail()">Create Objection Email</button>
+
+<script>
+function sendEmail() {
+    const name = document.getElementById('name').value.trim();
+    const address = document.getElementById('address').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const date = document.getElementById('date').value.trim();
+
+    if (!name || !address || !email) {
+        alert("Please fill in all your details before sending.");
+        return;
+    }
+
+    const recipients = [
+        "planning@cheshirewestandchester.gov.uk",
+        "gillian.edwards@cheshirewestandchester.gov.uk",
+        "aphra.brandreth.mp@parliament.uk",
+        "phil.rimmer@cheshirewestandchester.gov.uk",
+        "Clerk@cuddingtonparish.gov.uk"
+    ].join(",");
+
+    const subject = "Formal Objection to Planning Application 25/02111/FUL";
+
+    const body = 
+`Dear Sir/Madam,
+
+Please accept this as my formal objection to Planning Application 25/02111/FUL.
+
+Name: ${name}
+Address: ${address}
+Email: ${email}
+
+
+Formal Objection to Planning Application 25/02111/FUL
+
+Applicant: Barratt & David Wilson Homes North
+West
+Location: Land at Chester Road, Sandiway.
+Proposal: Development of 154 dwellings with access
+
+Date: ${date}
+
+I wish to object to the proposal for the following reasons.
+
+1. Conflict with Local and National Planning Policy
+
+Policies breached:
+
+Cuddington & Sandiway Village Plan: Development should be proportionate to infrastructure, protect heritage, and preserve green space.
+
+NPF paras. 8 & 11: Sustainable development requires balanced social, economic, and environmental factors.
+
+CWAC STRAT1 & STRAT9: Directs major housing to areas with infrastructure and avoids harm to character or environment.
+
+
+Reason: Scale and location of the proposal are disproportionate to the village’s infrastructure and will cause permanent loss of green space and heritage setting.
+
+
+2. Failure to Meet Local Housing Need
+
+Policies breached:
+
+Cuddington & Sandiway Village Plan (Housing Objectives): Calls for a small number of genuinely affordable, smaller homes for young people, first-time buyers, and downsizing older residents.
+
+NPF para. 15: Development should be genuinely plan-led and responsive to local evidence.
+
+CWAC SOC1: Requires housing provision to match identified local needs and tenure mix.
+
+
+Reason: The scheme is dominated by larger, high-value market housing, with an affordable element below required social rent levels and heavily skewed to shared ownership. This fails to meet the documented local demand for low-cost rental options and smaller homes, directly conflicting with adopted local policy and the NPF.
+
+
+3. Loss of High-Quality Agricultural Land
+
+Policies breached:
+
+NPF para. 174(b) & 175: Protect the best and most versatile agricultural land.
+
+CWAC ENV3: Safeguard productive farmland for food security.
+
+
+Reason: The site is actively farmed and forms part of Cheshire’s agricultural base. Loss is unnecessary when brownfield sites exist (e.g., Northwich market site).
+
+
+4. Inadequate Health and Education Infrastructure
+
+Policies breached:
+
+NPF para. 20(c) & 34: Development must be supported by adequate services and facilities.
+
+CWAC SOC5 & SOC6: Requires provision for healthcare and education in step with development.
+
+
+Reason: GP and dental services are already oversubscribed since local surgery closure; schools are at/near capacity. No secured provision in place.
+
+
+5. Traffic Congestion and Highway Safety Risks
+
+Policies breached:
+
+NPF para. 111: Development should be refused if highway safety issues are unresolved.
+
+CWAC TWH1: Development must not cause unacceptable highway impacts.
+
+
+Reason: Weaverham Road, School Lane, Dalefords Lane, and A556 already suffer congestion, speeding, and accident risks. Public transport is minimal, making the scheme car-dependent.
+
+
+6. Environmental and Biodiversity Harm
+
+Policies breached:
+
+NPF para. 179 & 180: Protect and enhance biodiversity and priority habitats.
+
+CWAC ENV4 & ENV5: Protect ancient woodland, wildlife corridors, and hedgerows.
+
+
+Reason: Adjacent to ancient woodland and The Whitegate Way; loss of habitat and hedgerows would damage biodiversity and local amenity.
+
+
+7. Impact on Heritage and Conservation Character
+
+Policies breached:
+
+NPF para. 199: Great weight must be given to conserving heritage assets and their setting.
+
+CWAC ENV6: Protect locally important heritage, including work of John Douglas.
+
+
+Reason: Development is visually and architecturally out of character with the conservation area and fails to respect local historic context.
+
+
+8. Protected Trees and Green Infrastructure
+
+Policies breached:
+
+Town & Country Planning Act 1990, s.197 & s.210: Duty to protect TPO trees.
+
+CWAC ENV3: Protect important landscape features.
+
+
+Reason: The site contains or adjoins TPO-protected trees with Root Protection Areas (RPAs) of 12m+, which must not be compromised by building works or garden landscaping.
+
+
+9. Loss of Amenity and Rural Character
+
+Policies breached:
+
+NPF para. 130: Development must be visually attractive, sympathetic to local character.
+
+Village Plan Objective 2: Preserve semi-rural identity and avoid urban sprawl.
+
+
+Reason: The proposal extends development beyond the village’s natural boundaries (A49/A556/Norley Road), leading to coalescence with neighbouring settlements.
+
+
+10. Construction and Long-Term Pollution
+
+Policies breached:
+
+NPF para. 185: New development should be mitigated against noise and air quality impacts.
+
+CWAC ENV7: Avoid harmful environmental effects during and after construction.
+
+
+Reason: Prolonged construction noise, dust, traffic, and long-term increase in vehicle emissions will harm residents’ health and wellbeing.
+
+
+
+---
+
+Summary:
+This proposal breaches multiple provisions of the NPF Dec 2024, the CWAC Local Plan, and the Cuddington & Sandiway Village Plan. It is not plan-led, fails to meet identified housing needs, undermines heritage and biodiversity, places unacceptable strain on infrastructure, and creates unresolved highway safety risks. Sustainable, policy-compliant alternatives exist, making this location inappropriate for development.
+
+I would appreciate acknowledgement of receipt of this email`;
+
+    const mailtoLink = `mailto:${recipients}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+}
+</script>
+
+</body>
+</html>
